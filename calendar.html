@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="calendar.css">
+</head>
+<body class="calendar-body">
+
+<div id="decor"></div>
+
+<div class="cal-card">
+  <h1 class="cal-title">September</h1>
+  <div class="cal-year">2026</div>
+
+  <table class="cal-grid">
+    <thead>
+      <tr>
+        <th>SUN</th><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="muted">30</td>
+        <td class="muted">31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td class="highlighted">
+          <span class="day-num">14</span>
+          <div class="marker-wrap">
+            <img class="marker-img" src="assets/highlight_marker.png" alt="">
+            <img class="emoji-cool" src="assets/emoji_1.png" alt="cool emoji">
+            <img class="emoji-party" src="assets/emoji_2.png" alt="party emoji">
+          </div>
+        </td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td class="muted">1</td>
+        <td class="muted">2</td>
+        <td class="muted">3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cal-watermark">www.CustomCalendarMaker.com</div>
+</div>
+
+<a class="back-btn" href="index.html">BACK</a>
+<a class="next-btn" id="nextBtn" href="main_menu.html">NEXT</a>
+
+<script src="decor.js"></script>
+<script src="transitions.js"></script>
+
+</body>
+</html>

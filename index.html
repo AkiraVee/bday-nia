@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="decor"></div>
+
+<div class="card" id="card">
+  <svg class="bow-top" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M32 20c-6-10-26-14-28-4-2 9 14 12 28 4z" fill="#ff8fab" stroke="#e8437a" stroke-width="1.5"/>
+    <path d="M32 20c6-10 26-14 28-4 2 9-14 12-28 4z" fill="#ff8fab" stroke="#e8437a" stroke-width="1.5"/>
+    <circle cx="32" cy="20" r="6" fill="#ff5c8a" stroke="#e8437a" stroke-width="1.5"/>
+  </svg>
+
+  <svg class="lock-icon" viewBox="0 0 24 24" fill="none">
+    <path class="shackle" d="M7 10V7a5 5 0 0 1 10 0v3" stroke="#e8437a" stroke-width="2" stroke-linecap="round"/>
+    <rect x="5" y="10" width="14" height="10" rx="3" fill="#ff5c8a"/>
+    <circle cx="12" cy="14.5" r="1.6" fill="#fff6f9"/>
+  </svg>
+
+  <h1>enter the password</h1>
+  <p class="sub">it's a special day, so type it in carefully~</p>
+
+  <div class="dots" id="dots">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+
+  <div class="pad" id="pad">
+    <button class="key" data-num="1">1</button>
+    <button class="key" data-num="2">2</button>
+    <button class="key" data-num="3">3</button>
+    <button class="key" data-num="4">4</button>
+    <button class="key" data-num="5">5</button>
+    <button class="key" data-num="6">6</button>
+    <button class="key" data-num="7">7</button>
+    <button class="key" data-num="8">8</button>
+    <button class="key" data-num="9">9</button>
+    <button class="key zero" data-num="0">0</button>
+  </div>
+
+  <button class="backspace" id="backspace">⌫ delete</button>
+
+  <div class="footer-note">made with love, just for you 🍒</div>
+
+  <div class="error-toast" id="errorToast">
+    <svg viewBox="0 0 48 48" fill="none">
+      <circle cx="24" cy="24" r="22" fill="#ffd8e6" stroke="#ff8fab" stroke-width="2"/>
+      <circle cx="17" cy="20" r="2.4" fill="#e8437a"/>
+      <circle cx="31" cy="20" r="2.4" fill="#e8437a"/>
+      <path d="M16 31c3-3 13-3 16 0" stroke="#e8437a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <path d="M14 15c1-1.5 3-1.5 4 0M30 15c1-1.5 3-1.5 4 0" stroke="#e8437a" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M13 24c-2 2-2 5 0 6M35 24c2 2 2 5 0 6" stroke="#7fb8ff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
+    </svg>
+    <span>oops, wrong password! try again</span>
+  </div>
+</div>
+
+<div class="celebrate" id="celebrate">
+  <h2>happy birthday! 🎉</h2>
+  <p>you unlocked it! I hope today is as wonderful and sweet as you are. this little corner of the internet is just for celebrating you. 🎀🍒</p>
+</div>
+
+<script src="decor.js"></script>
+<script src="script.js"></script>
+<script src="transitions.js"></script>
+
+</body>
+</html>
